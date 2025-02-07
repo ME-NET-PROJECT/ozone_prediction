@@ -16,16 +16,6 @@ This repository contains code for predicting ground ozone levels using various d
     </td>
   </tr>
   
-  <tr>
-    <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/a4090b00-5251-4d62-a1d8-2a1617e6ac6d" alt="Actual Ozone on 2024-01-05" style="width: 100%;" />
-      <p style="text-align: center;">Actual Ozone (2024-01-05)</p>
-    </td>
-    <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/7a27d6ba-b8a5-4f53-83f2-bcf19a0bf669" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
-      <p style="text-align: center;">Predicted Ozone (2024-01-05)</p>
-    </td>
-  </tr>
   
   <tr>
     <td style="text-align: center;">
