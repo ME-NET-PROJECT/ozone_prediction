@@ -3,28 +3,29 @@
 This repository contains code for predicting ground ozone levels using various deep learning models such as LSTM, Bi-LSTM, GRU, Bi-GRU, and an ensemble model. The project leverages time-series data to forecast air quality and evaluate multiple models' performance.
 
 <table>
-   <tr>
-    <td style="text-align: center;">
+  <tr>
+    <td style="text-align: center; font-weight: bold;">
       <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-09" style="width: 100%;" />
-      <p style="text-align: center; font-weight: bold;">Actual Ozone (2024-01-09)</p>
+      Actual Ozone (2024-01-09)
     </td>
-    <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
-      <p style="text-align: center; font-weight: bold;">Predicted Ozone (2024-01-09)</p>
+    <td style="text-align: center; font-weight: bold;">
+      <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-09" style="width: 100%;" />
+      Predicted Ozone (2024-01-09)
     </td>
   </tr>
   
   <tr>
-    <td style="text-align: center;">
+    <td style="text-align: center; font-weight: bold;">
       <img src="https://github.com/user-attachments/assets/a4090b00-5251-4d62-a1d8-2a1617e6ac6d" alt="Actual Ozone on 2024-01-05" style="width: 100%;" />
-      <p style="text-align: center; font-weight: bold;">Actual Ozone (2024-01-05)</p>
+      Actual Ozone (2024-01-05)
     </td>
-    <td style="text-align: center;">
+    <td style="text-align: center; font-weight: bold;">
       <img src="https://github.com/user-attachments/assets/7a27d6ba-b8a5-4f53-83f2-bcf19a0bf669" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
-      <p style="text-align: center; font-weight: bold;">Predicted Ozone (2024-01-05)</p>
+      Predicted Ozone (2024-01-05)
     </td>
   </tr>
 </table>
+
 
 ## Overview
 
