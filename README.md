@@ -123,6 +123,50 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
 ```
 
 ## Results
+<table border="1">
+  <caption>Regression Results</caption>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+      <th>MAPE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bi_lstm</td>
+      <td>11.65</td>
+      <td>8.58</td>
+      <td>11.85</td>
+    </tr>
+    <tr>
+      <td>bi_gru</td>
+      <td>11.89</td>
+      <td>8.62</td>
+      <td>12.06</td>
+    </tr>
+    <tr>
+      <td>ensemble</td>
+      <td>11.78</td>
+      <td>8.65</td>
+      <td>12.07</td>
+    </tr>
+    <tr>
+      <td>gru</td>
+      <td>11.91</td>
+      <td>8.77</td>
+      <td>12.14</td>
+    </tr>
+    <tr>
+      <td>lstm</td>
+      <td>11.81</td>
+      <td>8.65</td>
+      <td>12.11</td>
+    </tr>
+  </tbody>
+</table>
+
 
 The results of the evaluations are saved in the following structure:
 
