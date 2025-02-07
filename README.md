@@ -9,7 +9,7 @@ This repository contains code for predicting ground ozone levels using various d
       <p>Actual Ozone (go3)</p>
     </td>
     <td style="text-align: center;">
-      <img src="[https://github.com/user-attachments/assets/7a27d6ba-b8a5-4f53-83f2-bcf19a0bf669](https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a)" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
+      <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
       <p>Predicted Ozone (go3)</p>
     </td>
   </tr>
