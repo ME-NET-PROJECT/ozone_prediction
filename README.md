@@ -123,50 +123,84 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
 ```
 
 ## Results
-<table border="1">
-  <caption>Regression Results</caption>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>RMSE</th>
-      <th>MAE</th>
-      <th>MAPE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>bi_lstm</td>
-      <td>11.65</td>
-      <td>8.58</td>
-      <td>11.85</td>
-    </tr>
-    <tr>
-      <td>bi_gru</td>
-      <td>11.89</td>
-      <td>8.62</td>
-      <td>12.06</td>
-    </tr>
-    <tr>
-      <td>ensemble</td>
-      <td>11.78</td>
-      <td>8.65</td>
-      <td>12.07</td>
-    </tr>
-    <tr>
-      <td>gru</td>
-      <td>11.91</td>
-      <td>8.77</td>
-      <td>12.14</td>
-    </tr>
-    <tr>
-      <td>lstm</td>
-      <td>11.81</td>
-      <td>8.65</td>
-      <td>12.11</td>
-    </tr>
-  </tbody>
-</table>
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-7btt" colspan="4">Regression Results</th>
+    <th class="tg-7btt" colspan="4">Classifcation Results   <br>     (Low, Medium, High, Very High)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr">Model</td>
+    <td class="tg-fymr">RMSE</td>
+    <td class="tg-fymr">MAE</td>
+    <td class="tg-fymr">MAPE</td>
+    <td class="tg-fymr">Accuracy</td>
+    <td class="tg-fymr">Precision</td>
+    <td class="tg-fymr">Recall</td>
+    <td class="tg-fymr">F1-Score</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">bi_lstm</td>
+    <td class="tg-c3ow">11.65</td>
+    <td class="tg-c3ow">8.58</td>
+    <td class="tg-c3ow">11.85</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.81</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">bi_gru</td>
+    <td class="tg-c3ow">11.89</td>
+    <td class="tg-c3ow">8.62</td>
+    <td class="tg-c3ow">12.06</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ensemble</td>
+    <td class="tg-c3ow">11.78</td>
+    <td class="tg-c3ow">8.65</td>
+    <td class="tg-c3ow">12.07</td>
+    <td class="tg-c3ow">0.84</td>
+    <td class="tg-c3ow">0.82</td>
+    <td class="tg-c3ow">0.84</td>
+    <td class="tg-c3ow">0.83</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">gru</td>
+    <td class="tg-c3ow">11.91</td>
+    <td class="tg-c3ow">8.77</td>
+    <td class="tg-c3ow">12.14</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.80</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.79</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">lstm</td>
+    <td class="tg-c3ow">11.81</td>
+    <td class="tg-c3ow">8.65</td>
+    <td class="tg-c3ow">12.11</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.81</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+</tbody></table>
 
 The results of the evaluations are saved in the following structure:
 
