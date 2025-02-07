@@ -3,32 +3,29 @@
 This repository contains code for predicting ground ozone levels using various deep learning models such as LSTM, Bi-LSTM, GRU, Bi-GRU, and an ensemble model. The project leverages time-series data to forecast air quality and evaluate multiple models' performance.
 
 <table>
-  
   <tr>
-    <td style="text-align: center;">
+    <td style="text-align: center; width: 50%;">
       <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-09" style="width: 100%;" />
       <p>Actual Ozone (2024-01-09)</p>
     </td>
     
-    <td style="text-align: center;">
+    <td style="text-align: center; width: 50%;">
       <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-09" style="width: 100%;" />
       <p>Predicted Ozone (2024-01-09)</p>
     </td>
   </tr>
   
-  
   <tr>
-    <td style="text-align: center;">
+    <td style="text-align: center; width: 50%;">
       <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-09" style="width: 100%;" />
       <p>Actual Ozone (go3)</p>
     </td>
     
-    <td style="text-align: center;">
+    <td style="text-align: center; width: 50%;">
       <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-09" style="width: 100%;" />
       <p>Predicted Ozone (go3)</p>
     </td>
   </tr>
-  
 </table>
 
 ## Overview
