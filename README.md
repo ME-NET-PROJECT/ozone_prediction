@@ -5,23 +5,23 @@ This repository contains code for predicting ground ozone levels using various d
 <table>
    <tr>
     <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-05" style="width: 100%;" />
-      <p>Actual Ozone (go3)</p>
+      <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-09" style="width: 100%;" />
+      <p>Actual Ozone (2024-01-09)</p>
     </td>
     <td style="text-align: center;">
       <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
-      <p>Predicted Ozone (go3)</p>
+      <p>Predicted Ozone (2024-01-09)</p>
     </td>
   </tr>
   
   <tr>
     <td style="text-align: center;">
       <img src="https://github.com/user-attachments/assets/a4090b00-5251-4d62-a1d8-2a1617e6ac6d" alt="Actual Ozone on 2024-01-05" style="width: 100%;" />
-      <p>Actual Ozone (go3)</p>
+      <p>Actual Ozone (2024-01-05)</p>
     </td>
     <td style="text-align: center;">
       <img src="https://github.com/user-attachments/assets/7a27d6ba-b8a5-4f53-83f2-bcf19a0bf669" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
-      <p>Predicted Ozone (go3)</p>
+      <p>Predicted Ozone (2024-01-05)</p>
     </td>
   </tr>
 </table>
