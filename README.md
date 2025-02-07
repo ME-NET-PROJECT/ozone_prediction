@@ -123,6 +123,8 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
 ```
 
 ## Results
+The results are based on both regression and classification metrics. In addition to predicting a specific ozone value, we categorise the ozone levels into four classes: low, medium, high, and very high, and present the corresponding results using classification metrics.
+
 <table class="tg"><thead>
   <tr>
     <th class="tg-7btt" colspan="4">Regression Results</th>
@@ -191,6 +193,8 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
     <td class="tg-c3ow">0.82</td>
   </tr>
 </tbody></table>
+
+Below is a visualisation of a 7 days prediction from 05/01/2024 to 11/01/2024.
 
 ![7 days_Prediction](https://github.com/user-attachments/assets/7be44e03-8fee-401c-a301-c54cd78dbbe4)
 
