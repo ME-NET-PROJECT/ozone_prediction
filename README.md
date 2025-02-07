@@ -134,6 +134,7 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
     <td class="tg-fymr">RMSE</td>
     <td class="tg-fymr">MAE</td>
     <td class="tg-fymr">MAPE</td>
+
     <td class="tg-fymr">Accuracy</td>
     <td class="tg-fymr">Precision</td>
     <td class="tg-fymr">Recall</td>
@@ -190,6 +191,8 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
     <td class="tg-c3ow">0.82</td>
   </tr>
 </tbody></table>
+
+![7 days_Prediction](https://github.com/user-attachments/assets/7be44e03-8fee-401c-a301-c54cd78dbbe4)
 
 The results of the evaluations are saved in the following structure:
 
