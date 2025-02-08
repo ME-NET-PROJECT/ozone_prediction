@@ -166,10 +166,10 @@ The results are based on both regression and classification metrics. In addition
     <td class="tg-c3ow">11.78</td>
     <td class="tg-c3ow">8.65</td>
     <td class="tg-c3ow">12.07</td>
-    <td class="tg-c3ow">0.84</td>
-    <td class="tg-c3ow">0.82</td>
-    <td class="tg-c3ow">0.84</td>
-    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">**0.84**</td>
+    <td class="tg-c3ow">**0.82**</td>
+    <td class="tg-c3ow">**0.84**</td>
+    <td class="tg-c3ow">**0.83**</td>
   </tr>
   <tr>
     <td class="tg-0pky">gru</td>
