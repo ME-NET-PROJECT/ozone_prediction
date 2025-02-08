@@ -136,7 +136,6 @@ The results are based on both regression and classification metrics. In addition
     <td class="tg-fymr">RMSE</td>
     <td class="tg-fymr">MAE</td>
     <td class="tg-fymr">MAPE</td>
-
     <td class="tg-fymr">Accuracy</td>
     <td class="tg-fymr">Precision</td>
     <td class="tg-fymr">Recall</td>
