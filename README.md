@@ -37,7 +37,7 @@ The models in this repository are designed to predict ozone levels using data co
 - **Bi-GRU (Bidirectional Gated Recurrent Unit)**
 - **Ensemble Model** (combination of the above models)
 
-The evaluation includes multiple performance metrics, including RMSE, MAE, MAPE, and R-squared. The results are saved as CSV files for further analysis.
+The evaluation includes multiple performance metrics, including RMSE, MAE and  MAPE. The results are saved as CSV files for further analysis.
 
 ## Requirements
 
