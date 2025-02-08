@@ -204,15 +204,12 @@ results/
     ├── lstm/
     │   ├── lstm_metrics.csv
     │   ├── lstm_predictions.csv
-    │   └── lstm_predictions.pdf
     ├── bi_lstm/
     │   ├── bi_lstm_metrics.csv
     │   ├── bi_lstm_predictions.csv
-    │   └── bi_lstm_predictions.pdf
     ├── ensemble/
     │   ├── ensemble_metrics.csv
     │   ├── ensemble_predictions.csv
-    │   └── ensemble_predictions.pdf
     └── ...
 ```
 
