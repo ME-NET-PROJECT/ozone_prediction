@@ -1,2 +1,3 @@
-Model,Accuracy,Precision,Recall,F1-Score
-lstm,0.8340349740932642,0.8138418792406835,0.8340349740932642,0.8197300917070953
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3287ddabc4e94e7a6acbd672fd5ee3ea52464f5a91afccb93e56f4cc5431a75
+size 124

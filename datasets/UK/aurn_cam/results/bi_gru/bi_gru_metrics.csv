@@ -1,2 +1,3 @@
-Model,RMSE,MAE,MAPE,R-squared
-bi_gru,11.89091,8.6220455,12.056714296340942,0.4036010298415037
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cf17ba5c986d0cfd58e5df2cb74baed0d562fa7bf6c39a6e2c5dfbe16d6bcfe
+size 96
