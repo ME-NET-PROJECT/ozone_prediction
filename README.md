@@ -62,8 +62,7 @@ This function evaluates several pre-trained models (LSTM, Bi-LSTM, GRU, Bi-GRU) 
 
 - **RMSE (Root Mean Squared Error)**
 - **MAE (Mean Absolute Error)**
-- **MAPE (Mean Absolute Percentage Error)**
-- **R-squared** 
+- **MAPE (Mean Absolute Percentage Error)** 
 
 It also saves the prediction results in CSV files and generates plots comparing predicted vs true values.
 
@@ -214,7 +213,7 @@ results/
 ```
 
 ### Metrics File: `model_name_metrics.csv`
-Contains the evaluation metrics for each model (RMSE, MAE, MAPE, R-squared).
+Contains the evaluation metrics for each model (RMSE, MAE, MAPE).
 
 ### Predictions File: `model_name_predictions.csv`
 Contains the predicted ozone values alongside true values for comparison.
