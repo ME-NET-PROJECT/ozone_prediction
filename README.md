@@ -1,6 +1,31 @@
-# Air Quality Prediction with Deep Learning
+# Ozone Prediction with Deep Learning
 
 This repository contains code for predicting ground ozone levels using various deep learning models such as LSTM, Bi-LSTM, GRU, Bi-GRU, and an ensemble model. The project leverages time-series data to forecast air quality and evaluate multiple models' performance.
+
+<table>
+  <tr>
+    <td style="text-align: center; font-weight: bold;">
+      <img src="https://github.com/user-attachments/assets/5c6e6cf8-77e0-4db8-bb29-56e9046e5de6" alt="Actual Ozone on 2024-01-09" style="width: 100%;" />
+      Actual Ozone (2024-01-09)
+    </td>
+    <td style="text-align: center; font-weight: bold;">
+      <img src="https://github.com/user-attachments/assets/233e89dd-b7c9-4f8d-8112-46ee7f9b120a" alt="Predicted Ozone on 2024-01-09" style="width: 100%;" />
+      Predicted Ozone (2024-01-09)
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="text-align: center; font-weight: bold;">
+      <img src="https://github.com/user-attachments/assets/a4090b00-5251-4d62-a1d8-2a1617e6ac6d" alt="Actual Ozone on 2024-01-05" style="width: 100%;" />
+      Actual Ozone (2024-01-05)
+    </td>
+    <td style="text-align: center; font-weight: bold;">
+      <img src="https://github.com/user-attachments/assets/7a27d6ba-b8a5-4f53-83f2-bcf19a0bf669" alt="Predicted Ozone on 2024-01-05" style="width: 100%;" />
+      Predicted Ozone (2024-01-05)
+    </td>
+  </tr>
+</table>
+
 
 ## Overview
 
@@ -12,7 +37,7 @@ The models in this repository are designed to predict ozone levels using data co
 - **Bi-GRU (Bidirectional Gated Recurrent Unit)**
 - **Ensemble Model** (combination of the above models)
 
-The evaluation includes multiple performance metrics, including RMSE, MAE, MAPE, and R-squared. The results are saved as CSV files for further analysis.
+The evaluation includes multiple performance metrics, including RMSE, MAE and  MAPE. The results are saved as CSV files for further analysis.
 
 ## Requirements
 
@@ -37,8 +62,7 @@ This function evaluates several pre-trained models (LSTM, Bi-LSTM, GRU, Bi-GRU) 
 
 - **RMSE (Root Mean Squared Error)**
 - **MAE (Mean Absolute Error)**
-- **MAPE (Mean Absolute Percentage Error)**
-- **R-squared** 
+- **MAPE (Mean Absolute Percentage Error)** 
 
 It also saves the prediction results in CSV files and generates plots comparing predicted vs true values.
 
@@ -98,6 +122,79 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
 ```
 
 ## Results
+The results are based on both regression and classification metrics. In addition to predicting a specific ozone value, we categorise the ozone levels into four classes: low, medium, high, and very high, and present the corresponding results using classification metrics.
+
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-7btt" colspan="4">Regression Results</th>
+    <th class="tg-7btt" colspan="4">Classifcation Results   <br>     (Low, Medium, High, Very High)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr">Model</td>
+    <td class="tg-fymr">RMSE</td>
+    <td class="tg-fymr">MAE</td>
+    <td class="tg-fymr">MAPE</td>
+    <td class="tg-fymr">Accuracy</td>
+    <td class="tg-fymr">Precision</td>
+    <td class="tg-fymr">Recall</td>
+    <td class="tg-fymr">F1-Score</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">bi_lstm</td>
+    <td class="tg-c3ow">11.65</td>
+    <td class="tg-c3ow">8.58</td>
+    <td class="tg-c3ow">11.85</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.81</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">bi_gru</td>
+    <td class="tg-c3ow">11.89</td>
+    <td class="tg-c3ow">8.62</td>
+    <td class="tg-c3ow">12.06</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">ensemble</td>
+    <td class="tg-c3ow">11.78</td>
+    <td class="tg-c3ow">8.65</td>
+    <td class="tg-c3ow">12.07</td>
+    <td class="tg-c3ow">0.84</td>
+    <td class="tg-c3ow">0.82</td>
+    <td class="tg-c3ow">0.84</td>
+    <td class="tg-c3ow">0.83</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">gru</td>
+    <td class="tg-c3ow">11.91</td>
+    <td class="tg-c3ow">8.77</td>
+    <td class="tg-c3ow">12.14</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.80</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.79</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">lstm</td>
+    <td class="tg-c3ow">11.81</td>
+    <td class="tg-c3ow">8.65</td>
+    <td class="tg-c3ow">12.11</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.81</td>
+    <td class="tg-c3ow">0.83</td>
+    <td class="tg-c3ow">0.82</td>
+  </tr>
+</tbody></table>
+
+Below is a visualisation of a 7 days prediction from 05/01/2024 to 11/01/2024.
+
+![7 days_Prediction](https://github.com/user-attachments/assets/7be44e03-8fee-401c-a301-c54cd78dbbe4)
 
 The results of the evaluations are saved in the following structure:
 
@@ -106,20 +203,20 @@ results/
     ├── lstm/
     │   ├── lstm_metrics.csv
     │   ├── lstm_predictions.csv
-    │   └── lstm_predictions.pdf
+    │   ├── visualise/
     ├── bi_lstm/
     │   ├── bi_lstm_metrics.csv
     │   ├── bi_lstm_predictions.csv
-    │   └── bi_lstm_predictions.pdf
+    │   ├── visualise/
     ├── ensemble/
     │   ├── ensemble_metrics.csv
     │   ├── ensemble_predictions.csv
-    │   └── ensemble_predictions.pdf
+    │   ├── visualise/
     └── ...
 ```
 
 ### Metrics File: `model_name_metrics.csv`
-Contains the evaluation metrics for each model (RMSE, MAE, MAPE, R-squared).
+Contains the evaluation metrics for each model (RMSE, MAE, MAPE).
 
 ### Predictions File: `model_name_predictions.csv`
 Contains the predicted ozone values alongside true values for comparison.
