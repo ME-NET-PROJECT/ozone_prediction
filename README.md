@@ -72,8 +72,8 @@ This function trains an ensemble model by combining the predictions of the indiv
 ### 3. Ensemble Model Evaluation: `evaluate_ensemble()`
 After training the ensemble model, this function evaluates its performance using the same metrics as the individual models. It saves the predictions and evaluation metrics to CSV files.
 
-### 4. Decile-Based Classification: `get_bin_numbers()`
-This function discretizes the predicted and actual ozone values into bins (deciles). It calculates classification metrics (Accuracy, Precision, Recall, F1-Score) based on the decile assignments, making it easier to assess how well the models perform in terms of classifying different ozone levels.
+### 4. Quartile-Based Classification: `get_bin_numbers()`
+This function discretises the predicted and actual ozone values into four bins (quartile). It calculates classification metrics (Accuracy, Precision, Recall, F1-Score) based on the decile assignments, making it easier to assess how well the models perform in terms of classifying different ozone levels.
 
 ## Usage
 
@@ -214,12 +214,6 @@ results/
     │   ├── visualise/
     └── ...
 ```
-
-### Metrics File: `model_name_metrics.csv`
-Contains the evaluation metrics for each model (RMSE, MAE, MAPE).
-
-### Predictions File: `model_name_predictions.csv`
-Contains the predicted ozone values alongside true values for comparison.
 
 ## License
 
