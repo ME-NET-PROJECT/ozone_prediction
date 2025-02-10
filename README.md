@@ -29,7 +29,7 @@ This repository contains code for predicting ground ozone levels using various d
 
 ## Overview
 
-The models in this repository are designed to predict ozone levels using data collected from environmental monitoring stations. The primary models implemented are:
+The models in this repository are designed to predict ozone levels using data collected from environmental monitoring stations. The predicted ozone values usually range from 1 to 238 µg/m³ (micrograms per cubic meter), as per AURN standards. The primary models implemented are:
 
 - **LSTM (Long Short-Term Memory)**
 - **Bi-LSTM (Bidirectional Long Short-Term Memory)**
@@ -122,7 +122,7 @@ df['True_Value_Decile'] = df['True_Value'].apply(get_bin_numbers)
 ```
 
 ## Results
-The results are based on both regression and classification metrics. In addition to predicting a specific ozone value, we categorise the ozone levels into four classes: low, medium, high, and very high, and present the corresponding results using classification metrics.
+The results are based on both regression and classification metrics. In addition to predicting a specific ozone value (ranging from 1 to 238 µg/m³ (micrograms per cubic meter), as per AURN standards.), we categorise the ozone levels into four classes: low, medium, high, and very high, and present the corresponding results using classification metrics.
 
 <table class="tg"><thead>
   <tr>
