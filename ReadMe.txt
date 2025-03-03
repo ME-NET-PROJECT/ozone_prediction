@@ -1,5 +1,7 @@
 # Air Quality Prediction with Deep Learning
 
+https://doi.org/10.5281/zenodo.14960648
+
 This repository contains code for predicting ground ozone levels using various deep learning models such as LSTM, Bi-LSTM, GRU, Bi-GRU, and an ensemble model. The project leverages time-series data to forecast air quality and evaluate multiple models' performance.
 
 ## Overview
