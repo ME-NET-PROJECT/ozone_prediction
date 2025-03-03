@@ -55,6 +55,12 @@ You can install them by running:
 pip install -r requirements.txt
 ```
 
+## Novel Feature Engineering 
+
+The feature engineering approach selectively applies polynomial transformations to specific columns while preserving the dataset’s original structure, controlling the degree and interaction terms to prevent excessive feature expansion. Applied to atmospheric variables like NO₂, CH₄, temperature, and wind speed, it effectively captures nonlinear effects and interactions, enhancing the model’s ability to learn complex environmental relationships. Squared and interaction terms help model nonlinear dependencies, making this method more structured and efficient than applying polynomial expansion to all features indiscriminately.
+ 
+For network architecture, we designed five custom models called stacked-GRU, stacked-LSTM, stacked-Bi-GRU, and stacked-Bi-LSTM, and an ensemble of these models for ozone and health predictions. While stacked-GRU and stacked-LSTM offer a simple, efficient structure, stacked-Bi-GRU and stacked-Bi-LSTM introduce key innovations, including a 512-unit feed-forward Dense layer for improved feature extraction, residual connections for better gradient flow, and progressive sequence compression (128 --> 64 --> 32 units) for hierarchical abstraction. A hybrid decoder with an additional Dense layer (10 units) further refines features before the final regression output. The ensemble model averages outputs from the different architectures to improve generalisation, and Huber loss is fine-tuned to enhance robustness against outliers in ozone and health predictions.
+
 ## Functionality
 
 ### 1. Model Evaluation: `evaluate_all_models()`
